@@ -37,7 +37,7 @@ countryContainer.insertAdjacentHTML('beforeend', markuplist );
           error({
       text: 'Please enter a more specific query!',
     });
-   
+   countryContainer.insertAdjacentHTML('beforeend', markuplist );
      }
     
 
