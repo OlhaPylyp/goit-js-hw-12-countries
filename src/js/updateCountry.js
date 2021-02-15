@@ -24,22 +24,15 @@ function updateCountryList(data) {
        success({
       text: ' Your query is correct!',
     });
-   countryContainer.insertAdjacentHTML('beforeend', markup);
-   
+   countryContainer.insertAdjacentHTML('beforeend', markup);   
     }
-     if (data.length > 2 && data.length <= 10) {
-countryContainer.insertAdjacentHTML('beforeend', markuplist );
-    info({
-      text: 'Please specify the query!',
-    });
-  }
+  
     if (data.length > 10) {
           error({
       text: 'Please enter a more specific query!',
     });
    countryContainer.insertAdjacentHTML('beforeend', markuplist );
      }
-    
-
+    countryContainer.insertAdjacentHTML('beforeend', markuplist );
 }
 export default updateCountryList;
